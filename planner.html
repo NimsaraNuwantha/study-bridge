@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Free student planner tools: a study-hours calculator, a GPA calculator and a sample weekly timetable."><title>Planner | StudyBridge</title><link rel="stylesheet" href="style.css"></head>
+<body><a class="skip-link" href="#content">Skip to main content</a>
+<header class="site-header"><div class="header-inner">
+<a class="logo" href="index.html"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17h18M5 17c0-5 3-8 7-8s7 3 7 8M12 9V5"/></svg></span>StudyBridge</a>
+<button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+<nav id="main-nav" aria-label="Main navigation"><ul><li><a href="index.html">Home</a></li><li><a href="study-tips.html">Study Tips</a></li><li><a href="resources.html">Resources</a></li><li><a href="planner.html" aria-current="page">Planner</a></li><li><a class="nav-cta" href="contact.html">Contact</a></li></ul></nav>
+</div></header>
+<div class="page-head"><div class="wrap"><span class="eyebrow">StudyBridge</span><h1>Planner</h1><p>Two quick calculators and a sample timetable to help you organise your studies. Nothing you enter is saved or sent anywhere.</p></div></div>
+<main id="content" class="wrap page-main">
+
+    <div class="two-col">
+      <section class="card" aria-labelledby="hours-heading">
+        <h2 id="hours-heading">Study hours calculator</h2>
+        <form id="hours-form" novalidate>
+          <label for="subjects">Number of subjects</label>
+          <input type="number" id="subjects" min="1" value="4" required>
+          <label for="days">Days until exams</label>
+          <input type="number" id="days" min="1" value="14" required>
+          <label for="hours-per-day">Study hours per day</label>
+          <input type="number" id="hours-per-day" min="0.5" step="0.5" value="3" required>
+          <p><button class="btn btn-primary" type="submit">Calculate</button></p>
+        </form>
+        <div class="result-box" id="hours-result" aria-live="polite">Your result will appear here.</div>
+      </section>
+
+      <section class="card" aria-labelledby="gpa-heading">
+        <h2 id="gpa-heading">GPA calculator</h2>
+        <p>Uses a 4.0 scale. Check your university's own grading scale.</p>
+        <form id="gpa-form" novalidate>
+          <div class="gpa-row">
+            <label for="credits1">Module 1 credits</label>
+            <input type="number" id="credits1" class="credits" min="1" value="3">
+            <label for="grade1">Module 1 grade</label>
+            <select id="grade1" class="grade">
+              <option value="">Choose grade</option>
+              <option value="4">A (4.0)</option>
+              <option value="3.7">A- (3.7)</option>
+              <option value="3.3">B+ (3.3)</option>
+              <option value="3">B (3.0)</option>
+              <option value="2.7">B- (2.7)</option>
+              <option value="2.3">C+ (2.3)</option>
+              <option value="2">C (2.0)</option>
+              <option value="1">D (1.0)</option>
+              <option value="0">E (0.0)</option>
+            </select>
+          </div>
+          <div class="gpa-row">
+            <label for="credits2">Module 2 credits</label>
+            <input type="number" id="credits2" class="credits" min="1" value="3">
+            <label for="grade2">Module 2 grade</label>
+            <select id="grade2" class="grade">
+              <option value="">Choose grade</option>
+              <option value="4">A (4.0)</option>
+              <option value="3.7">A- (3.7)</option>
+              <option value="3.3">B+ (3.3)</option>
+              <option value="3">B (3.0)</option>
+              <option value="2.7">B- (2.7)</option>
+              <option value="2.3">C+ (2.3)</option>
+              <option value="2">C (2.0)</option>
+              <option value="1">D (1.0)</option>
+              <option value="0">E (0.0)</option>
+            </select>
+          </div>
+          <div class="gpa-row">
+            <label for="credits3">Module 3 credits</label>
+            <input type="number" id="credits3" class="credits" min="1" value="2">
+            <label for="grade3">Module 3 grade</label>
+            <select id="grade3" class="grade">
+              <option value="">Choose grade</option>
+              <option value="4">A (4.0)</option>
+              <option value="3.7">A- (3.7)</option>
+              <option value="3.3">B+ (3.3)</option>
+              <option value="3">B (3.0)</option>
+              <option value="2.7">B- (2.7)</option>
+              <option value="2.3">C+ (2.3)</option>
+              <option value="2">C (2.0)</option>
+              <option value="1">D (1.0)</option>
+              <option value="0">E (0.0)</option>
+            </select>
+          </div>
+          <p><button class="btn btn-primary" type="submit">Calculate GPA</button></p>
+        </form>
+        <div class="result-box" id="gpa-result" aria-live="polite">Your result will appear here.</div>
+      </section>
+    </div>
+
+    <section aria-labelledby="timetable-heading">
+      <h2 id="timetable-heading">Sample weekly study timetable</h2>
+      <div class="table-wrap">
+        <table>
+          <caption>Example only. Change it to fit your own lectures.</caption>
+          <thead>
+            <tr><th scope="col">Day</th><th scope="col">Morning</th><th scope="col">Afternoon</th><th scope="col">Evening</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Monday</th><td>Lectures</td><td>Review notes</td><td>Subject A practice</td></tr>
+            <tr><th scope="row">Tuesday</th><td>Lectures</td><td>Assignment work</td><td>Subject B reading</td></tr>
+            <tr><th scope="row">Wednesday</th><td>Lectures</td><td>Group study</td><td>Subject C practice</td></tr>
+            <tr><th scope="row">Thursday</th><td>Subject A revision</td><td>Past papers</td><td>Rest</td></tr>
+            <tr><th scope="row">Friday</th><td>Lectures</td><td>Assignment work</td><td>Weekly review</td></tr>
+            <tr><th scope="row">Weekend</th><td>Catch-up</td><td>Free time</td><td>Plan next week</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+<footer><div class="foot">
+<div><a class="logo" href="index.html">StudyBridge</a><p>Study tips, free resources and planning tools for university students, including support when classes move online.</p></div>
+<div><h3>Explore</h3><ul><li><a href="study-tips.html">Study Tips</a></li><li><a href="resources.html">Resources</a></li><li><a href="planner.html">Planner</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+<div><h3>Disruptions</h3><ul><li><a href="study-tips.html#disruptions">Learning during disruptions</a></li><li><a href="resources.html">Weather &amp; safety links</a></li></ul></div>
+</div><div class="copy">&copy; <span id="year">2026</span> StudyBridge | IS 1106 Group Web Project</div></footer>
+<script src="script.js"></script></body></html>
